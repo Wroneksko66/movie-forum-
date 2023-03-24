@@ -7,5 +7,10 @@ import { Movie } from '../../models/movie';
   styleUrls: ['./movie-cover.component.css'],
 })
 export class MovieCoverComponent {
-  @Input() movie: Movie;
+  @Input() wlozMiFilm: Movie;
+
+
+  ngOnChanges(): void {
+    console.log(this.wlozMiFilm)
+  }
 }

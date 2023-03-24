@@ -1,0 +1,6 @@
+<div class="grid">
+  <app-movie-cover
+    *ngFor="let years of (yearsMovie | async)"
+    [wlozMiFilm]="years"
+  ></app-movie-cover>
+</div>
